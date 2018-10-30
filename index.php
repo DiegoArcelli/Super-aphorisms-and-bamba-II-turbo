@@ -1,6 +1,7 @@
 <?php
+	echo shell_exec("wc -l < Perle_di_saggezza");
     $file = fopen("Perle_di_saggezza","r");
-    $num = rand(0,25);
+    $num = rand(0,56);
     $cont = 0;
     while(($line = fgets($file)) !== false){
         if($cont==$num){
@@ -37,7 +38,7 @@
     </head>
     <body>
         <script>
-            var x = Math.floor(Math.random()*31);
+            var x = Math.floor(Math.random()*30);
             var c = 0;
             $(document).ready(function(){
                 $("body").css("background-image","url(Foto/" + x + ".gif)");
